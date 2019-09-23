@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/buju.css" />
+<link rel="stylesheet" href="css/classifcation.css" />
+<title>影视天堂</title>
+<style>
+.mymovie{ width:1000px; height:700px; background:#181818; overflow:hidden;}
+#vl{ width:600px; height:600px;  float:left; margin-top:30px; border:1px solid #999;}
+#vr{ width:388px; height:600px; float:right; margin-top:30px; border:1px solid #999}
+
+</style>
+</head>
+<center>
+<body>
+<div id="main"><div style="height:90px;">
+	<div style="position:fixed; z-index:99; width:1000px; margin:auto">
+		<div class="head" >
+			<div class="title">
+				<div style=" position:absolute; top:30px; left:70px; float:left; ">
+   			  <a style="height:20px; border-right:#FFF 2px solid; margin-right:2px; " href="#">微 信 公 众 号 </a>&nbsp;<a href="#"> A P P 下 载</a>
+		  		</div>
+		  	<div style="position:absolute; top:30px; right:70px; float:right; ">
+   			<a style=" height:20px;border-right:#FFF 2px solid;margin-right:2px" href="zc.html"><img src="img/biaodian.png" height="20" width="15"">注 册 </a>&nbsp;<a href="dl.html"> 登 录</a>
+    	</div>
+    	<div style="clear:both"></div>
+	</div>
+<div class="menu">
+		<ul>
+   		  <li>
+       	  <a href="index.html">首页</a>
+          </li>
+       	  <li><a href="tuijian.html">猜你喜欢</a>
+                    		<ul>
+                	<li><a href="tuijian.html">分类推荐</a></li>
+                    <li><a href="#">最新上映</a></li>
+                    <li><a href="#">影院大片</a></li>
+
+                </ul>
+          </li>
+       	  <li><a href="yingping.html">与你分享</a>
+                              	<ul>
+                	<li><a href="yingping.html">热门影评</a></li>
+                    <li><a href="#">影视论坛</a></li>
+                    <li><a href="#">大咖聚集</a></li>
+                </ul>
+          </li>
+       	 <li><a href="#">我的影院</a>
+         </li>
+       	 <li><input type="text" style="margin-top:10px; display:inline; width:150px; height:20px;border-radius:10px; border:1px solid #CCC">
+   	      <a href="#"><img src="img/sousuo.png" width="32" height="32" style="vertical-align:middle"></a></li>
+    	</ul></div> 
+    </div>
+</div>  <!--  导航栏 --> 
+  </div>  
+    
+    <div class="mymovie">
+    	<div id="vl">
+    		<video id="kk3" align="center" poster="img/dkek.jpg" src="music/dance.mp4" controls="controls" width="580" height="600">
+
+			</video>
+    	</div>
+    <div id="vr">
+    	<div style="width:440px; height:270px; margin-top:15px;" id="kk1"><img src="img/jianjie1.png" width="440" height="270" /></div>
+       	<div style="width:440px; height:270px; margin-top:18px;" id="kk2"><img src="img/jianjie2.png" width="440" height="270" /></div>
+    </div>
+     <div style="clear:both"></div>
+     
+     </div>
+
+  
+       <script>
+	   var video=document.getElementById('kk3');
+       var kk1=document.getElementById('kk1');
+	   var kk2=document.getElementById('kk2');
+	    kk1.onclick=function(){
+		   video.src="music/adver.mp4";
+		   video.poster="img/glj.jpg";
+		   }
+		kk2.onclick=function(){
+		   video.src="music/dance.mp4";
+		    video.poster="img/dkek.jpg";
+		   }
+       </script>
+       
+       <!--视频播放-->
+ <div style="width:1000px; height:100px;"><img src="img/clogo.png" width="880" height="120"></div> <!-- 推荐部分logo -->
+ 
+   <div id="recommend">  
+        <div class="rel">
+            <div class="re-item">
+            	<div class="re-item-front"></div>
+            	<div class="re-item-back"></div>
+            <input type="submit" value=" WATCHIN" style="color:#FFF; border-radius:10px; background:#666; border:#FF0 2px solid; margin-top:5px;" />
+       		</div>
+              <div class="relcen">
+              	<img src="img/rel1-2.png" />
+              </div>
+              <div class="relright">
+              	<img src="img/rel1-3.png" />
+              </div>
+            <div style="clear:both"></div>
+   		</div>
+        <div class="rel" >
+              	<img src="img/rel2.png" style="margin-top:80px;" />
+            <div style="clear:both"></div>
+   		</div>
+        <div class="rel" >
+              	<img src="img/rel3.png" style="margin-top:80px;" />
+            <div style="clear:both"></div>
+   		</div>
+</div>
+    
+
+    
+    
+<div id="gonggao">
+    	<div style="float:left; margin-top:52px;">
+    		<img src="img/xlogo.png" width="259" height="163">
+    	</div>
+		<ul id="menhu">
+  			<li class="m12"> 
+        		<p><a href="#" class="yellow">关于我们</a></p>
+        		<p><a href="#">公司动态</a></p>
+       			 <p><a href="#">新闻动态</a></p>
+       			 <p><a href="#">联系方式</a></p>
+   		 	</li> 
+    		<li class="m12"> 
+        		<p><a href="#" class="yellow">内容介绍</a></p>
+        		<p><a href="#">Movie号态</a></p>
+        		<p><a href="#">合作推广</a></p>
+        		<p><a href="#">用户协议</a></p>
+    		</li> 
+            <li class="m12"> 
+        
+                <p><a href="#" class="yellow">招聘精英</a></p>
+                <p><a href="#">社会招聘</a></p>
+                <p><a href="#">校园招聘</a></p>
+            </li> 
+            <li class="m12"> 
+        
+                <p><a href="#" class="yellow">常见问题</a></p>
+                <p><a href="#">帮助中心</a></p>
+                <p><a href="#">侵权投诉</a></p>
+            </li> 
+        </ul> 
+</div>
+   <div> <img src="img/wenzi.png" width="323" height="42" style="bottom:10px;">	
+</div>
+</body>
+</center>
+</html>

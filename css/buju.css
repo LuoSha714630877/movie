@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+*
+{
+ margin:0; 
+ padding: 0 ;
+ text-decoration:none;
+ font-family:"华文仿宋";
+} /*清除自带边距*/
+
+body {
+
+	background-color:#000;
+	
+}
+#main,
+#head,
+#nav,
+#lunbo1,
+#lunbo2,
+#tuijian,
+#foot,
+#gonggao{
+
+	width: 1000px;  /* 公共样式 */
+
+}	
+#main{ 	color:white; 
+		background-color: #000000; /* 最外面大盒子，稳定布局 */
+		box-shadow:0px 0px  10px 5px #333;
+}
+#head{
+	height: 90px;
+	background-color: #181818; /* 头部样式 */
+}
+
+.head{ margin:auto; height:auto}
+.title{width:1000px; height:64px; position:relative;overflow: hidden; background: #181818 url(../img/logo.png) no-repeat center; font-family:"华文仿宋";font-size:14px; font-weight:bolder;}
+.title a{ color:#FFF} 
+.title a:hover {color:#fdad12;}
+
+
+.menu{ height:40px; width:1000px; background:#030500;}
+.menu>ul{list-style:none; height:40px;}
+.menu>ul>li{float:left;font-size:18px; font-weight:bolder;color:#d9d9d9; margin:0 30px 0 80px; text-align:center; line-height:40px; position:relative;}
+.menu>ul>li>a{ border-top:0px solid #fdad12; text-decoration:none; position:relative; color:#FFF}
+.menu>ul>li>a:link{posittext-decoration:none;}
+.menu>ul>li>a:after{ content:""; height:100%; border-top:2px solid orange; position:absolute;  left:50%;width:0; transition:0.2s all; }
+.menu>ul>li>a:hover:after,a.active:after{ left:0;width:100%; } /*一级菜单样式*/
+
+
+.menu>ul>li>ul{ list-style:none; display:none; position:absolute; z-index:30;}
+.menu>ul>li>ul>li{ height:100%; width:85px; border-radius:10px; border:1px solid #000;}
+.menu>ul>li>ul a{ display:block;
+    height:100%; color:#CCC; background:rgba(28,28,28,0.6);border-radius:10px; border:1px solid #000;}
+.menu > ul > li > ul li a:hover {
+        background-color:#000;}
+.menu>ul li:hover ul {
+        display:block;
+    }
+/* 导航栏样式 */
+
+
+#gonggao{
+	height:300px;
+	background-color:#181818;
+	margin-bottom:20px;
+	overflow:hidden;
+	position:relative
+	} /* 公告整体样式 */
+#gonggao ul#menhu{width:950px; margin-left:350px; margin-top:40px; font-size:20px; position:absolute} 
+#gonggao ul#menhu li{text-align:left;padding-right:22px;overflow:hidden;width:124px;float:left} 
+#gonggao p{ line-height:42px;}
+#gonggao a{ color:#FFF}
+#gonggao a:hover { color:#fdad12;}
+#gonggao .yellow{ color:#FC3} /* 公告内部样式 */
+
+#foot{
+	height: 50px;
+}
+/* 页尾*/

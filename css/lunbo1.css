@@ -1,0 +1,52 @@
+#lunbo1 {
+            position: relative;
+            width: 1000px;
+            height: 500px;
+            overflow: hidden;
+			transform-style: perserve-3d;
+        }/*整个轮播的大div的设置*/
+        
+#lunbo1 #list {
+            position: absolute;
+            z-index: 1;
+            width: 8000px;
+            height: 380px;
+			
+        }/*存放图片的div的设置*/
+        
+#lunbo1 #list img {
+            float: left;
+            width: 1000px;
+            height: 501px;
+        }/*每一张图的设置*/
+
+ #lunbo1 .arrow {
+            position: absolute;
+            top: 200px;
+            z-index: 2;
+            display: none;
+            width: 40px;
+            height: 40px;
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 39px;
+            text-align: center;
+            color: #fff;
+            background-color: RGBA(0, 0, 0, .3);
+            cursor: pointer;
+        }/*对左右两个箭头的div进行大小和背景颜色的设置，同时对位置的设定*/
+ #lunbo1 .arrow:hover {
+            background-color: RGBA(0, 0, 0, .7);
+        }/*左右箭头悬浮透明*/
+        
+ #lunbo1:hover .arrow {
+            display: block;
+        }/*块级*/
+        
+ #lunbo1 #prev {
+            left: 20px;
+        }
+        
+ #lunbo1 #next {
+            right: 20px;
+        }

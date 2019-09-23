@@ -1,0 +1,19 @@
+.box2 {
+	width: 800px; height: 250px;
+	transform-style: perserve-3d;/*使被转换的子元素保留其 3D 转换*/
+    margin: 60px auto; position: relative; /*相对定位，原来位置继续保留，不脱标,同时上下外边距50，左右居中。*/
+    }
+.box2 img{width:200px; height: 250px; position: absolute; top: 60px; transition:all .3s linear;} 
+/*transition属性的子属性:
+1.transition-property: none时，没有属性获得过渡效果。 all时所有属性获得过渡效果
+2.transition-duration：time，设置过渡需要的时间。
+3.transition-timing-function：linear； 设置过渡速度为恒速。*/
+
+ 
+.front {left: 100px;} 
+.back {left: 500px;} 
+.active {left: 300px; transform: scale(1.5);  z-index: 10;}
+ 
+.btns2 .btn2 {width: 60px; height: 60px; display: block; position: absolute; background-color: rgba(0,0,0,.5); font-size: 50px; font-family: "微软雅黑"; color:rgba(255,255,255,.5); line-height: 55px; text-align: center; cursor: pointer; z-index: 100; opacity: 0; transition:opacity .3s linear;} 
+.btns2 .btn2:first-child {top: 125px; opacity: 1;}
+.btns2 .btn2:last-child {top: 125px; right: 0px; opacity: 1;}

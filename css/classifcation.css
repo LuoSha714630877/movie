@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */
+#classMovie{
+	        position: relative;
+            width: 1000px;
+            height:800px;
+            overflow: hidden;
+			background: url(../img/foryou.png) center no-repeat;
+			
+			
+}
+#classMovie #munu{
+	position:absolute;
+	float:left;
+	height:800px;
+	width:325px;
+}
+#classMovie #munu #div td{cursor:pointer; }
+#classMovie #munu #div{
+	color:rgba(204,204,204,0.8);
+	position:absolute;
+	top:148px;
+	left:50px;
+	height:486px;
+	width:248px;
+	background-color:rgba(0,0,0,0.64);
+	border-radius:10px;
+	border:1px solid rgba(51,51,51,0.8);
+	}
+#classMovie #munu #div #mur{
+	float:left;
+	margin-left:17px;
+	text-align:left;
+	width:85px;
+	height:480px;
+}
+
+#classMovie #munu #div #mur ul{
+	list-style:none;
+	height:425px;
+	margin-top:16px;
+
+}
+#classMovie #munu #div #mur li{
+	text-align:left;
+	height:37px;
+	line-height:37px;
+	font-size:21px;
+	border-right:1px solid rgba(204,204,204,0.8); 
+	cursor:pointer; /*鼠标停留链接样式*/
+}
+#classMovie #munu #div #mur li:hover,#classMovie #munu #div td:hover,#calssMovie a:hover{
+	transform:translate(0,-3px);
+	text-decoration:none;
+	color:#fdad12;
+}
+#classMovie #muright{
+	position:absolute;
+	top:104px;
+	right:0;
+	float:left;
+	height:534px;
+	width:685px;
+}
+#classMovie #muright ul{
+	margin:50px 0;
+}
+#classMovie #muright ul li{
+	 float:left; 
+	 width:157px; 
+	 margin-left:12px;
+	 color:#847241;
+	 font-size:20px;
+}
+#classMovie #muright ul li:hover{
+	 text-decoration:none;cursor:pointer;transform:translate(0,-10px); box-shadow: 2px 3px 3px 0 #666; /* 鼠标停留特效 */
+}
+#recommend{	
+			width: 1000px;
+			position: relative;
+			overflow:hidden;
+			height:1650px;
+			background:url(../img/foryou2.png) no-repeat center;	     
+}
+.rel{
+	height:500px;
+	margin:50px 10px 0 25px;
+
+}
+.relcen{
+	float:left;
+	margin-top:50px;
+}
+.relright{
+	float:left;
+	margin-top:0px;
+	border-radius:5px;
+}
+.re-item {
+				float:left;
+                width: 184px;
+                margin: 50px auto;
+                height: 270px;
+                cursor: pointer;
+                position: relative;
+                perspective: 500;
+                -webkit-perspective: 500;
+}
+.re-item-front,
+.re-item-back {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background:url(../img/re1.png) no-repeat;
+                -webkit-perspective: 1000;
+                /*backface-visibility: hidden;*/
+                -webkit-transition: all 1.5s;
+                -moz-transition: all 1.5s;
+                -ms-transition: all 1.5s;
+                -o-transition: all 1.5s;
+                box-shadow: rgba(50, 50, 50, 0.2) 0 0 15px;
+                overflow: hidden;
+}
+
+.re-item-back {
+                position: relative;
+                transform: rotateY(-180deg);
+                -webkit-transform: rotateY(-180deg);
+}
+
+ .re-item:hover .re-item-front {
+                transform: rotateY(-180deg);
+                -webkit-transform: rotateY(-180deg);
+}
+
+ .re-item:hover .re-item-back {
+                transform: rotateY(-360deg);
+                -webkit-transform: rotateY(-360deg);
+}
+
+.re-box .re-item dd {
+                text-align: center;
+                font-family: "微软雅黑";
+}
+
+.re-item .re-item-job {
+                margin: 2px 0;
+                font-size: 18px;
+                color: #303030;
+                line-height: 40px;
+}
+
+.re-item .re-item-des {
+                padding: 0 12px;
+                font-size: 14px;
+                color: #939393;
+}
+#gonggao{
+	height:290px;
+	background-color:#181818;
+	margin-bottom:10px;
+	overflow:hidden;
+	position:relative
+	}
+#gonggao ul#menhu{width:950px;
+				  margin-left:350px;
+				  margin-top:50px;
+				  font-size:20px;
+				  position:absolute;} 
+#gonggao ul#menhu li{text-align:left;
+					padding-right:22px;
+					overflow:hidden;width:124px;float:left;} 
+#gonggao p{ line-height:42px;}
+#gonggao .yellow{ color:#FC3}
+#gonggao a{ color:#CCC}
+#gonggao a:hover { color:#fdad12;}
+#foot{
+	height: 80px;
+	background-color: #181818;
+}

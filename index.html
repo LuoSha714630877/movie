@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Movie</title>
+	<link rel="stylesheet" href="css/lunbo1.css" type="text/css">
+    	<link rel="stylesheet" href="css/lunbo2.css" type="text/css">
+    <link rel="stylesheet" href="css/buju.css" />
+	<script type="text/javascript" src="js/lunbo.js"></script>
+<!--  <embed src="music/music.mp3" hidden="true" autostart="true" loop="true" style="position:absolute"> 背景音乐-->
+</head>
+<style>
+
+#lunbo2{
+	height: 750px;
+	background-color: #181818; /* 第二个轮播图 */
+}
+#tuijian{
+	height: 900px;
+	background-color: #000000; /* 推荐部分样式 */
+	color:rgba(153,153,153,1);
+	text-indent:inherit;
+}
+#tuijian #biao img{ display:block;} /* 推荐部分的logo样式 */
+#tuijian p{ margin:5px;}
+.aaa{width:550px; height:210px; position:relative; overflow:hidden}
+.bbb{width:550px; height:105px; position:absolute; background:rgba(0,0,0,0.5); bottom:-210px; transition:all .3s linear;}
+.aaa:hover .bbb{ bottom:0; } /* 为你推荐部分样式 */
+
+.ccc{width:160px; height:170px; position:relative; overflow:hidden}
+.ddd{width:160px; height:85px; position:absolute; background:rgba(0,0,0,0.5); bottom:-170px; transition:all .3s linear;}
+.ccc:hover .ddd{ bottom:0; } /* 为你推荐部分样式 */
+
+.hhh{width:250px; height:380px; position:relative; overflow:hidden}
+.ggg{width:250px; height:380px; position:absolute;background:rgba(0,0,0,0.5); left:-250px; transition:all .3s linear;}
+.hhh:hover .ggg{ left:0; } /* 为你推荐部分样式 */
+
+.rrr{width:240px; height:170px; position:relative; overflow:hidden}
+.ttt{width:240px; height:85px; position:absolute; background:rgba(0,0,0,0.5);bottom:-170px; transition:all .3s linear;}
+.rrr:hover .ttt{ bottom:0; } /* 为你推荐部分样式 */
+
+
+.eee{width:400px; height:200px; position:relative; overflow:hidden}
+.fff{width:400px; height:150px; position:absolute; background:rgba(0,0,0,0.5); top:-200px; transition:all .3s linear;}
+.eee:hover .fff{ top:0; } /* 为你推荐部分样式 */
+
+.zzz{width:150px; height:170px; position:relative; overflow:hidden}
+.xxx{width:150px; height:170px; position:absolute; background:rgba(0,0,0,0.5); right:-150px; transition:all .3s linear;}
+.zzz:hover .xxx{ right:0; } /* 为你推荐部分样式 */
+
+</style>
+<script>
+
+</script>
+<center>
+<body>
+<!--
+<div id="donghua" style="padding:0; margin:0;width:100%; height:100%; position:absolute; display:block; z-index:99999"><img src="img/kaiju.jpg" width="100%" height="100%" style="position:relative;">
+</div>
+<script>
+var dh = document.getElementById('donghua');
+time5 = setTimeout(function() {
+                    dh.style.opacity=0;
+					dh.style.zIndex=0;
+                }, 2000)
+				dh.onclick=function(){
+					dh.style.opacity=0;
+					dh.style.zIndex=0;
+				
+					}
+</script> 
+<!--开场动画，bug待修复-->
+<div id="main"><div style="height:90px;">
+	<div style="position:fixed; z-index:99; width:1000px; margin:auto">
+		<div class="head" >
+			<div class="title">
+				<div style=" position:absolute; top:30px; left:70px; float:left; ">
+   			  <a style="height:20px; border-right:#FFF 2px solid; margin-right:2px; " href="#">微 信 公 众 号 </a>&nbsp;<a href="#"> A P P 下 载</a>
+		  		</div>
+		  	<div style="position:absolute; top:30px; right:70px; float:right;">
+   			<a style=" height:20px;border-right:#FFF 2px solid;margin-right:2px;" href="zc.html"><img src="img/biaodian.png" height="20" width="15">注 册 </a>&nbsp;<a href="dl.html"> 登 录</a>
+    	</div>
+    	<div style="clear:both"></div>
+	</div>
+<div class="menu">
+		<ul>
+   		  <li>
+       	  <a href="index.html">首页</a>
+          </li>
+       	  <li><a href="tuijian.html">猜你喜欢</a>
+                    		<ul>
+                	<li><a href="tuijian.html">分类推荐</a></li>
+                    <li><a href="#">最新上映</a></li>
+                    <li><a href="#">影院大片</a></li>
+
+                </ul>
+          </li>
+       	  <li><a href="yingping.html">与你分享</a>
+                              	<ul>
+                	<li><a href="yingping.html">热门影评</a></li>
+                    <li><a href="#">影视论坛</a></li>
+                    <li><a href="#">大咖聚集</a></li>
+                </ul>
+          </li>
+       	 <li><a href="shipin.html">我的影院</a>
+         </li>
+       	 <li><input type="text" style="margin-top:10px; display:inline; width:150px; height:20px; border:1px solid #CCC; border-radius:30px">
+   	      <a href="#"><img src="img/sousuo.png" width="32" height="32" style="vertical-align:middle"></a></li>
+    	</ul></div> 
+    </div>
+</div></div>  <!--  导航栏 --> 
+
+  <div id="lunbo1">
+      <div id="list" style="left: -1000px;">
+           <img src="img/444.png" alt="4" />
+           <img src="img/111.png" alt="1" />
+           <img src="img/222.png" alt="2" />
+           <img src="img/333.png" alt="3" />
+           <img src="img/444.png" alt="4" />
+           <img src="img/555.png" alt="5" />
+           <img src="img/111.png" alt="1" />
+      </div>
+        <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+        <a href="javascript:;" id="next" class="arrow">&gt;</a>
+   </div> <!-- 第一个轮播图 -->
+    
+    <div id="lunbo2"><div><br>
+<img src="img/alogo.png" width="700" height="130"></div>
+    <div class="">
+ <div class="box2">
+ <a href="tuijian.html"><img class="front" src="img/a11.png" alt="PIC"></a>
+ <a href="tuijian.html"><img class="back" src="img/a22.png" alt="PIC"></a>
+ <a href="tuijian.html"><img class="active" src="img/a44.png" alt="PIC"></a>
+ <div class="btns2">
+ <span class="btn2"><</span>
+ <span class="btn2">></span>
+ </div>
+ </div>
+ </div>
+    
+    </div> <!-- 第二个轮播图 -->
+    
+ <div id="tuijian">
+ 	<div>
+ <img src="img/blogo.png" width="700" height="120"> <!-- 推荐部分logo -->
+</div>
+
+
+		<div id="biao" style="margin-top:30px;">
+	<table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+    	<th colspan=3>
+    	<div class="aaa">
+    		<div style="top; position:absolute;">
+    		<a href="shipin.html"><img src="img/001.png" width="550" height="210"></a>
+   			 </div>
+   	 	<div  class="bbb">
+        <br />
+        <br />Big fish ：<br>
+ 《大鱼》是一部2003年出品的美国奇幻片，故事改编自丹尼尔·华勒斯（Daniel Wallace）于1998年出版的《大鱼老爸》（Big Fish）改编而成。电影以孩子的口吻来叙述其爸爸传奇的一生。
+        </div> <!-- 隐藏部分的内容  -->
+   	</div>
+    </th>
+    
+    <th rowspan=2>
+    <div class="hhh">
+   <div style="left:0; position:absolute;"> <a href="shipin.html"><img src="img/002.png" width="250" height="380"></a> </div>
+   <div class="ggg"><br /><br /><br /><br /><br /><br /><p>New cards of house：<br>
+ 该剧讲述一个冷血无情的美国国会议员及与他同样野心勃勃的妻子在华盛顿白宫中运作权力的故事。</p></div>
+    </th>
+    
+  </tr>
+  <tr>
+    <td>
+    <div class="ccc">
+    <div style="top:0; position:absolute;"><a href="shipin.html"><img src="img/003.png" width="160" height="170"></a></div>
+    <div class="ddd"><p><br />Hannibal：<br>
+该片是《沉默的羔羊》的续集，8年前FBI女干探史达琳曾在监狱拜访过一位神秘的高智商的食人魔变态心理医生汉尼拔。</p></div>
+    </td>
+    
+    
+    <td>
+    <div class="rrr">
+    <div style="bottom:0; position:absolute"><a href="shipin.html"><img src="img/004.png" width="240" height="170"></a></div>
+    <div class="ttt"><p><br />DUNKERQUE: 该片改编自二战历史事件“敦刻尔克大撤退”，当时40万英法联军被敌军包围在敦刻尔克的海滩上，面对敌军步步逼近的绝境，他们不得不为自己的命运背水一战。</p></div>
+    </div>
+    </td>
+    
+    
+     <td>
+     <div class="zzz">
+     <div style="right:0; position:absolute"><img src="img/005.png" width="150" height="170"></div>
+     <div class="xxx"><br />Baskets：<br>
+该剧讲述一名梦想成为法国古典派小丑的男子，在法国小丑学院求学失败后，回到老家加州继续追求梦想的故事。</div></p>
+     </div>
+     </td>
+
+  </tr>
+     <th colspan=2>
+     <div class="eee">
+     <div style="top:0; position:absolute;"><img src="img/006.png" width="400" height="200"></div>
+     <div class="fff"><br /><br /><br />Lost of space：<br>
+《星际穿越》主要讲述了一队探险家利用他们针对虫洞的新发现，超越人类对于太空旅行的极限，从而开始在广袤的宇宙中进行星际航行的故事。</div>
+     </div>
+     </th>
+
+    <th colspan=2>
+    <div class="eee">
+    <div style="top:0; position:absolute;"><img src="img/007.png" width="400" height="200"></div>
+    <div class="fff"><br /><br /><br />American snlops：<br>
+影片是根据美国著名狙击手自传《美国狙击手》改编，讲述这位海豹突击队神枪手的传奇故事</div>
+    </div>
+    </th>
+
+  <tr>
+  </tr>
+	</table> <!-- 为你推荐部分，使用表格制作 -->
+
+</div>
+    </div> 
+    
+    <div id="gonggao">
+    <div style="float:left; margin-top:65px;">
+    <img src="img/xlogo.png" width="259" height="163">
+    </div>
+<ul id="menhu">
+  <li class="m12"> 
+        <p><a href="#" class="yellow">关于我们</a></p>
+        <p><a href="#">公司动态</a></p>
+        <p><a href="#">新闻动态</a></p>
+        <p><a href="#">联系方式</a></p>
+    </li> 
+    <li class="m12"> 
+        <p><a href="#" class="yellow">内容介绍</a></p>
+        <p><a href="#">Move影号</a></p>
+        <p><a href="#">合作推广</a></p>
+        <p><a href="#">用户协议</a></p>
+    </li> 
+    <li class="m12"> 
+
+        <p><a href="#" class="yellow">招聘精英</a></p>
+        <p><a href="#">社会招聘</a></p>
+        <p><a href="#">校园招聘</a></p>
+    </li> 
+    <li class="m12"> 
+
+        <p><a href="#" class="yellow">常见问题</a></p>
+        <p><a href="#">帮助中心</a></p>
+        <p><a href="#">侵权投诉</a></p>
+    </li> 
+
+</ul> 
+    </div> <!-- 底部公告部分 -->
+    
+ <div id="foot"><img src="img/wenzi.png" width="323" height="42" style="bottom:10px;"></div> <!-- 最底部 -->
+ 
+ 
+</div>
+</body>
+</center>
+</html>
